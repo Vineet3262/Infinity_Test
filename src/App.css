@@ -1,0 +1,315 @@
+.main {
+  padding: 10px;
+}
+
+.landingPage {
+  padding: 5px;
+}
+
+.firstBlock {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.pera {
+  width: 20%;
+  margin-left: 10%;
+  color: #fff;
+}
+
+.img01 {
+  margin-right: 10%;
+  height: 40%;
+}
+
+.img01 img {
+  transform: skewX(-15deg);
+}
+
+.secondBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  position: relative;
+}
+
+.secondBlock::after {
+  content: '';
+  position: absolute;
+  width: 121%;
+  left: -88px;
+  top: 40%;
+  height: 18rem;
+  background-color: #f08380;
+  transform: rotate(16deg);
+  z-index: -1;
+}
+
+.secondBlock::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 15.5rem;
+  background-color: #f08380;
+  bottom: -255px;
+  left: 21%;
+}
+
+.boxBlock {
+  height: 200px;
+  margin-left: 10%;
+}
+
+.learnMoreBtn {
+  background-color: #b0312b;
+  border: none;
+  width: 150px;
+  padding: 5px;
+  color: white;
+}
+
+.sliderBtn {
+  position: absolute;
+  left: -40px;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+.sliderBtn button {
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-color: #017992;
+  margin: 5px;
+  color: white;
+}
+
+.sliderText {
+  margin-top: 70px;
+}
+
+.bgImageWithText {
+  height: 280px;
+  width: 400px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.612), rgba(0, 0, 0, 0.534)), url("./image/1.3.jpg");
+}
+
+.bgImage {
+  height: 280px;
+  width: 400px;
+  position: absolute;
+  right: -70px;
+  background-image: url("./image/1.3.jpg");
+}
+
+.slider {
+  display: flex;
+  width: 60%;
+  position: relative;
+}
+
+.boxBtn {
+  background-color: #f08380;
+  border: none;
+  height: 50px;
+  width: 110px;
+}
+
+.boxOne {
+  display: flex;
+  justify-content: start;
+  height: 20%;
+  width: 80%;
+  margin-left: auto;
+  position: relative;
+}
+
+.boxOne::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 85px;
+  background-color: #f08380;
+  top: 50%;
+  left: -85px;
+}
+
+.boxTwo {
+  display: flex;
+  justify-content: center;
+  width: 65%;
+  margin-top: 40px;
+  position: relative;
+}
+
+.boxTwo::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 170px;
+  background-color: #f08380;
+  top: 48%;
+  left: 136px;
+}
+
+.boxTwo .boxBtn {
+  position: relative;
+}
+
+.boxTwo .boxBtn::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 5.5rem;
+  background-color: #f08380;
+  left: 50%;
+  top: 100%;
+}
+
+.squre {
+  background-color: #017992;
+  height: 60px;
+  width: 119px;
+  right: -49px;
+  top: -17px;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 480px) {
+  .pera {
+    width: 100%;
+    color: #000;
+  }
+
+  .landingPage {
+    overflow: hidden;
+  }
+
+  .firstBlock {
+    justify-content: center;
+  }
+
+  .img01 img {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .secondBlock {
+    flex-wrap: wrap;
+  }
+
+  .slider {
+    margin-top: 3rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sliderBtn {
+    left: -3%;
+  }
+
+  .secondBlock::after {
+    width: 200%;
+    left: -150px;
+  }
+
+  .bgImage {
+    width: 100%;
+    display: none;
+  }
+
+  .boxOne {}
+
+  .boxTwo {
+    width: auto;
+  }
+
+  .boxOne::after {
+
+    left: -30px;
+    width: 60px;
+  }
+
+  .boxTwo::after {
+    left: 50px;
+    width: 100px;
+  }
+
+  .secondBlock::before {
+    height: 16.5rem;
+  }
+}
+
+@media screen and (max-width: 794px) and (min-width: 480px) {
+  .pera {
+    width: 100%;
+    color: #000;
+    text-align: center;
+  }
+
+  .landingPage {
+    overflow: hidden;
+  }
+
+  .firstBlock {
+    justify-content: center;
+  }
+
+  .img01 img {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .secondBlock {
+    flex-wrap: wrap;
+  }
+
+  .slider {
+    margin-top: 3rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sliderBtn {
+    left: 18.5%;
+  }
+
+  .secondBlock::after {
+    width: 200%;
+    left: -150px;
+  }
+
+  .bgImage {
+    width: 100%;
+    display: none;
+  }
+
+  .boxOne {
+    margin-left: 130px;
+  }
+
+  .boxTwo {
+    margin-left: 50px;
+  }
+
+  .boxOne::after {
+    left: -45px;
+    width: 50px;
+  }
+
+  .boxTwo::after {
+    left: 34px;
+    width: 140px;
+  }
+
+  .secondBlock::before {
+    height: 25rem;
+  }
+}
